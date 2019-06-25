@@ -8,7 +8,7 @@ import {
   NgModule,
   NgModuleFactoryLoader
 } from '@angular/core';
-import { AppComponent } from './AppComponent';
+import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { Headers, RequestOptions, Http, HttpModule } from '@angular/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -56,7 +56,17 @@ import 'rxjs-compat';
     CanvasInteractionDirective
   ],
   providers: [CarouselModule],
-  declarations: [AppComponent],
+  declarations: [
+    AppComponent,
+    categorySlider,
+    productStylesSlider,
+    productOptionsSlider,
+    DaliDraggable,
+    optionsCategoriesSlider,
+    wallChangeLeft,
+    wallChangeRight,
+    CanvasInteractionDirective
+  ],
   bootstrap: [AppComponent]
   })
 

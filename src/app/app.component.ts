@@ -1,4 +1,5 @@
 import {
+  Component,
   Renderer,
   SkipSelf,
   NgModule,
@@ -31,12 +32,6 @@ import { CarouselModule } from 'ngx-carousels';
 import { ImageUploadModule } from 'angular2-image-upload';
 // import { AtftModule } from 'atft';
 
-// tslint:disable
-
-NgModule({
-  schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA],
-})
-
 var __decorate =
   (this && this.__decorate) ||
   function(decorators, target, key, desc) {
@@ -67,3 +62,15 @@ var __metadata =
     }
   };
 
+// tslint:disable
+
+@NgModule({
+  schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA],
+})
+
+@Component({
+  selector: 'app-component',
+  templateUrl: './app.component.html'
+})
+
+export class AppComponent{}
